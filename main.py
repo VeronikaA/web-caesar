@@ -31,22 +31,22 @@ message_label + textarea +"<br>"
 
 
 
-header ="<h2>Web Caesar </h2>"
+header ="<h2>Web Caesar</h2>"
 
-return header +form
+return header + form
 
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-    content = build_page (" ")
-    self.response.write (content)
+    content = build_page(" ")
+    self.response.write(content)
     def post (self):
             message = self.request.get ("message")
             rotation = int (self.request.get ("rotation")) #0
             encrypted_message = caesar.encrypt (message,rotation)# hello</textarea>hello
             escaped_message= cgi.escape(encrypted_message)#hello&lt;/textarea&gt;hello
-            content= build_page (encrypted_message)
-            self.response.write (content)
+            content= build_page(encrypted_message)
+            self.response.write(content)
 
 
 app = webapp2.WSGIApplication([
