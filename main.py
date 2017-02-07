@@ -19,20 +19,21 @@ import caesar
 import cgi
 
 def build_page( textarea_content):
-    header ="<h1>Web Caesar</h1>"
+    
     rot_label = "<label>Rotate by: </label>"
     rotation_input= "<input type= 'number' name = 'rotation'/>"
 
     message_label = "<label>Type a Message:</label>"
-    text_area = "<textarea name = 'message'  + text_area_content + "</textarea>">
+    textarea = "<textarea name = 'message'  + text_area_content + "</textarea>">
     submit = "<input type = 'submit'/>"
     form = ("<form method= 'post'>" +  rot_label + rotation_input + "<br>" +
     message_label + text_area +"<br>"+ "<br>"
     + submit + "</form>")
 
+    
+    header ="<h2>Web Caesar</h2>"
 
-    content = header + form
-    return content
+    return header+form    
 
 
 class MainHandler(webapp2.RequestHandler):
