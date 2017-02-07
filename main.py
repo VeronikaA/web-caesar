@@ -27,7 +27,7 @@ def build_page( textarea_content):
     text_area = "<textarea name = 'message'  + text_area_content + "</textarea>">
     submit = "<input type = 'submit'/>"
     form = ("<form method= 'post'>" +  rot_label + rotation_input + "<br>" +
-    message_label + textarea +"<br>"+ "<br>"
+    message_label + text_area +"<br>"+ "<br>"
     + submit + "</form>")
 
 
