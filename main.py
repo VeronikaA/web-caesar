@@ -23,7 +23,7 @@ rot_label = "<label>Rotate by: </label>"
 rotation_input= "<input type= 'number' name = 'rotation'/>"
 
 message_label = "<label>Type a Message:</label>"
-textarea = "<textarea name= 'message'></textarea>"
+textarea = "<textarea name = 'message'  + textarea_content + "</textarea>">
 submit = "<button type = 'submit' value='Submit'>Submit </button>"
 form = ("<form method= 'post'>" +  rot_label + rotation_input + "<br>" +
 message_label + textarea +"<br>"
