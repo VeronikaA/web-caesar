@@ -29,7 +29,7 @@ def build_page( textarea_content):
     form = ("<form method = 'post'>" +
                 rot_label + rotation_input + "<br>" +
                 message_label + textarea + "<br>" + submit + "</form>")
-    + submit + "</form>")
+    
 
     
     header ="<h2>Web Caesar</h2>"
